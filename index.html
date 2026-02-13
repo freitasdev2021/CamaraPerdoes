@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura Municipal de [Nome da Cidade] - Site Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header-cima">
+        <div class="header-container-cima">
+            <nav class="nav-principal social" id="main-nav">
+                <ul>
+                    <li><a href="#home"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#home"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="#home"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#home"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#home"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </nav>
+            <form class="search-box">
+                <input type="text" class="search-txt" placeholder="Pesquisar...">
+                <button type="submit" class="search-btn">
+                    🔍
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <!--HEADER MEIO-->
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <img src="img/logo.png" alt="Logo da Prefeitura de [Nome da Cidade]">
+            </a>
+
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+                <span class="hamburguer"></span>
+                <span class="hamburguer"></span>
+                <span class="hamburguer"></span>
+            </button>
+
+            <nav class="nav-principal" id="main-nav">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#transparencia">Transparência</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#cidadao">Cidadão Online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo à Prefeitura de <br> [Nome da Cidade]</h1>
+            <p>Trabalhando por uma cidade mais justa, moderna e conectada com você.</p>
+            <a href="#servicos" class="btn-primary">Acesse os Serviços Online</a>
+        </div>
+    </section>
+
+    <section id="servicos" class="services-highlight section-padding">
+        <div class="container">
+            <h2>Serviços Mais Procurados</h2>
+            <p>Facilitando o seu dia a dia com acesso rápido aos principais serviços.</p>
+            <div class="service-cards">
+                <a href="#" class="card">
+                    <i class="fas fa-file-invoice"></i>
+                    <h3>IPTU</h3>
+                    <p>Emissão de 2ª via e consulta</p>
+                </a>
+                <a href="#" class="card">
+                    <i class="fas fa-building"></i>
+                    <h3>Alvará</h3>
+                    <p>Consulta e emissão de licenças</p>
+                </a>
+                <a href="#" class="card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Concursos</h3>
+                    <p>Editais e inscrições abertas</p>
+                </a>
+                <a href="#" class="card">
+                    <i class="fas fa-faucet"></i>
+                    <h3>Água e Esgoto</h3>
+                    <p>Serviços da concessionária</p>
+                </a>
+                <a href="#" class="card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Iluminação Pública</h3>
+                    <p>Solicite reparos</p>
+                </a>
+                <a href="#" class="card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Nota Fiscal</h3>
+                    <p>Sistema NFS-e</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias" class="news-events section-padding bg-light">
+        <div class="container">
+            <h2>Últimas Notícias e Eventos</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="https://via.placeholder.com/300x200?text=Noticia+1" alt="Imagem da Notícia 1">
+                    <div class="news-content">
+                        <span>25/10/2023</span>
+                        <h3>Título da Notícia Importante Aqui</h3>
+                        <p>Breve resumo da notícia para atrair o leitor. Clique para saber mais sobre o assunto...</p>
+                        <a href="#" class="read-more">Leia Mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="https://via.placeholder.com/300x200?text=Evento+Proximo" alt="Imagem do Evento Próximo">
+                    <div class="news-content">
+                        <span>20/10/2023 - Evento</span>
+                        <h3>Grande Feira de Artesanato Local</h3>
+                        <p>Participe da nossa feira anual, valorizando os artistas da nossa cidade. Entrada franca!</p>
+                        <a href="#" class="read-more">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="https://via.placeholder.com/300x200?text=Campanha" alt="Imagem da Campanha de Saúde">
+                    <div class="news-content">
+                        <span>18/10/2023 - Saúde</span>
+                        <h3>Campanha de Vacinação Contra Gripe</h3>
+                        <p>Confira os postos de saúde e horários para se vacinar e proteger sua família.</p>
+                        <a href="#" class="read-more">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn-secondary">Todas as Notícias e Eventos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="transparencia" class="transparency section-padding">
+        <div class="container">
+            <h2>Portal da Transparência</h2>
+            <p>Acompanhe a gestão pública municipal. Dados abertos e de fácil acesso para você.</p>
+            <div class="transparency-grid">
+                <a href="#" class="transparency-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Receitas e Despesas</h3>
+                    <p>Detalhamento do orçamento</p>
+                </a>
+                <a href="#" class="transparency-card">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Servidores</h3>
+                    <p>Informações sobre o quadro de pessoal</p>
+                </a>
+                <a href="#" class="transparency-card">
+                    <i class="fas fa-gavel"></i>
+                    <h3>Licitações e Contratos</h3>
+                    <p>Processos em andamento e finalizados</p>
+                </a>
+                <a href="#" class="transparency-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Leis e Decretos</h3>
+                    <p>Legislação municipal</p>
+                </a>
+                <a href="#" class="transparency-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Relatórios de Gestão</h3>
+                    <p>Auditorias e prestações de contas</p>
+                </a>
+                <a href="#" class="transparency-card">
+                    <i class="fas fa-comment-dots"></i>
+                    <h3>Ouvidoria</h3>
+                    <p>Faça sua denúncia ou sugestão</p>
+                </a>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn-primary">Acessar Portal Completo <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact-info section-padding bg-light">
+        <div class="container">
+            <h2>Fale Conosco e Informações Úteis</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Endereço</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua da Prefeitura, 123 - Centro<br>[Nome da Cidade], [UF], CEP: 00000-000</p>
+                    <a href="https://maps.google.com/?q=Rua+da+Prefeitura,+123" target="_blank" class="link-map">Ver no Mapa <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="contact-card">
+                    <h3>Atendimento</h3>
+                    <p><i class="fas fa-clock"></i> Segunda a Sexta-feira: 08h às 17h</p>
+                    <p><i class="fas fa-phone"></i> Telefone: (XX) XXXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> Email: contato@prefeitura.com.br</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col logo-col">
+                    <img src="https://via.placeholder.com/100x40?text=LOGO+PREF" alt="Logo Prefeitura Rodapé">
+                    <p>© 2023 Prefeitura Municipal de [Nome da Cidade]. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="#transparencia">Transparência</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#">Legislação</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Mapa do Site</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Conecte-se</h4>
+                    <p>Siga-nos nas redes sociais para ficar por dentro das novidades.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
