@@ -143,6 +143,7 @@ ul {
     /* position: sticky; */
     top: 0;
     z-index: 1000;
+    font-size:15px;
 }
 
 .header-container {
@@ -264,7 +265,6 @@ ul {
 
 /* ==================== 4. HERO SECTION ==================== */
 .hero {
-    background: linear-gradient(rgba(26, 79, 145, 0.7), rgba(26, 79, 145, 0.7)), url('https://via.placeholder.com/1920x800?text=Cidade+Moderna') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 120px 20px;
