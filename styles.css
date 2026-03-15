@@ -164,6 +164,7 @@ ul {
 
 .nav-principal li {
     margin-left: 30px;
+    position: relative;
 }
 
 .nav-principal a {
