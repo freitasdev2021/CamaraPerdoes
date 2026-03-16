@@ -31,15 +31,60 @@
          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Parlamentares</a>
          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Conselhos Municipais</a>
          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Organograma</a>
+         <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-expresidentes" role="tab" aria-controls="list-expresidentes">Legislaturas</a>
       </div>
    </div>
    <div class="col-8">
       <div class="tab-content" id="nav-tabContent">
          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-            <?php
-            include "components/historia.php";
-            ?>     
-        </div>
+            <section class="bg-dark text-white py-5">
+               <div class="container text-center">
+                  <h1 class="display-5 fw-bold">História de Perdões</h1>
+                  <p class="lead mb-0">
+                     Conheça a origem, fundação e as primeiras legislaturas do município de Perdões – Minas Gerais.
+                  </p>
+               </div>
+            </section>
+            <!-- FUNDAÇÃO -->
+            <section class="py-5">
+               <div class="container">
+                  <div class="row justify-content-center mb-4">
+                     <div class="col-lg-8 text-center">
+                        <h2 class="fw-bold">Fundação do Povoado</h2>
+                        <p class="text-muted">
+                           O município teve origem no antigo povoado <strong>São Bom Jesus dos Perdões</strong>, 
+                           formado no século XVIII.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="row g-4">
+                     <div class="col-lg-6">
+                        <div class="card shadow-sm border-0 h-100">
+                           <div class="card-body p-4">
+                              <h5 class="fw-bold mb-3">Povoado</h5>
+                              <p class="mb-0">
+                                 <strong>São Bom Jesus dos Perdões</strong>
+                              </p>
+                              <small class="text-muted">Origem do município</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="card shadow-sm border-0 h-100">
+                           <div class="card-body p-4">
+                              <h5 class="fw-bold mb-3">Fundadores (por volta de 1770)</h5>
+                              <ul class="mb-0">
+                                 <li>Romão Fagundes do Amaral</li>
+                                 <li>Manoel Luiz Cardoso</li>
+                                 <li>Manoel Fernandes Airão</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                <div class="col">
@@ -1085,6 +1130,11 @@
                   </div>
                </div>
             </div>
+         </div>
+         <div class="tab-pane fade" id="list-expresidentes" role="tabpanel" aria-labelledby="list-settings-list">
+            <?php
+               include "components/historia.php";
+               ?>                                
          </div>
       </div>
    </div>
