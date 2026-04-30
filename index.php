@@ -1,35 +1,47 @@
-
 <?php
-include"env.php";
-$rotas = array(
-    [
-        "path"=>"/",
-        "file" => "home.php",
-        "Title" => "Principal"
-    ],[
-        "path"=>"/Institucional",
-        "file" => "institucional.php",
-        "Title" => "Institucional"
+// 1. SIMULAR O ROUTER (Para funcionar com php -S sem precisar de arquivo extra)
+$uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+if ($uri_path !== '/' && file_exists(__DIR__ . $uri_path)) {
+    return false; // Retorna o arquivo (CSS, JS, Imagem) se ele existir
+}
+
+include "env.php";
+include "api.php";
+
+$rotas = [
+    ["path" => "/", "file" => "home.php", "Title" => "Principal"],
+    ["path" => "/Institucional", "file" => "institucional.php", "Title" => "Institucional"],
+    ["path" => "/noticia/{id}/{slug}", "file" => "noticia.php", "Title" => "Notícia"]
+];
+
+$Pagina = null;
+
+foreach ($rotas as $rota) {
+    // Converte a rota amigável em uma expressão regular (Regex)
+    // Ex: /noticia/{id}/{slug} vira /noticia/([^/]+)/([^/]+)
+    $pattern = preg_replace('/\{[a-zA-Z0-9]+\}/', '([^/]+)', $rota['path']);
+    $pattern = "#^" . $pattern . "$#";
+
+    if (preg_match($pattern, $uri_path, $matches)) {
+        array_shift($matches); // Remove a URL completa, deixa só as variáveis
+        preg_match_all('/\{([a-zA-Z0-9]+)\}/', $rota['path'], $paramNames);
+        $paramNames = $paramNames[1];
+
+        $params = array_combine($paramNames, $matches);
         
-    ]
-);
+        $Pagina = $rota['file'];
+        $Path = $rota['Title'];
+        break;
+    }
+}
 
-$uri = explode('?', $_SERVER['REQUEST_URI'])[0];
 
-//VIEW
-$paths = array_column($rotas,"path");
-$index = array_search($uri,$paths);
-$DIR = $_SERVER['DOCUMENT_ROOT'];
-$SUBMIT = "../../../src/Http/submits/";
-
-if($index !== false) {
-    $Pagina = $rotas[$index]['file'];
-    $Path = $rotas[$index]['Title'];
+// 2. VIEW
+if ($Pagina) {
     include "views/components/header.php";
-    include 'views/'.$Pagina;
-
+    include 'views/' . $Pagina;
     include "views/components/footer.php";
-    
-}else{
-    echo "Erro 404";
+} else {
+    http_response_code(404);
+    echo "Erro 404 - Página não encontrada";
 }

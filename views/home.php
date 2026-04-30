@@ -1,3 +1,18 @@
+<?php
+$response = apiRequest(
+    $api.'Noticias',
+    'GET',
+    [
+        "Limite" => 3
+    ],
+    [
+        "Authorization: ".$HeaderToken,
+        "Token: ".$Token
+    ]
+);
+
+$Noticias = json_decode($response['body'],true);
+?>
 <!--BANNER-->
 <section id="home" class="hero" style="background: url('img/banner.png') no-repeat center center/cover;"></section>
 <!--SERVIÇOS MAIS PROCURADOS-->
@@ -116,7 +131,7 @@
                 <h3>Transparência</h3>
             </a>
 
-            <a href="https://www.perdoes.mg.leg.br/ouvidoria" class="card">
+            <a href="<?=$Ouvidoria;?>" class="card">
                 <i class="fas fa-comments"></i>
                 <h3>Ouvidoria</h3>
             </a>
@@ -153,33 +168,20 @@
     <div class="container">
         <h2>Fique por Dentro</h2>
         <div class="news-grid">
-            <article class="news-card">
-                <img src="img/demo1.jpg" alt="Imagem da Notícia 1">
-                <div class="news-content">
-                    <span>25/10/2023</span>
-                    <h3>Título da Notícia Importante Aqui</h3>
-                    <p>Breve resumo da notícia para atrair o leitor. Clique para saber mais sobre o assunto...</p>
-                    <a href="#" class="read-more">Leia Mais <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            <article class="news-card">
-                <img src="img/demo2.jpeg" alt="Imagem do Evento Próximo">
-                <div class="news-content">
-                    <span>20/10/2023 - Evento</span>
-                    <h3>Grande Feira de Artesanato Local</h3>
-                    <p>Participe da nossa feira anual, valorizando os artistas da nossa cidade. Entrada franca!</p>
-                    <a href="#" class="read-more">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
-            <article class="news-card">
-                <img src="img/demo3.jpeg" alt="Imagem da Campanha de Saúde">
-                <div class="news-content">
-                    <span>18/10/2023 - Saúde</span>
-                    <h3>Campanha de Vacinação Contra Gripe</h3>
-                    <p>Confira os postos de saúde e horários para se vacinar e proteger sua família.</p>
-                    <a href="#" class="read-more">Saiba Mais <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </article>
+           <?php foreach($Noticias as $r): ?>
+                <article class="news-card">
+                    <img src="<?=$r['Capa']?>" alt="<?=$r['Titulo']?>">
+                    <div class="news-content">
+                        <span><?= $r['Data']; ?></span>
+                        <h3><?=$r['Titulo']?></h3>
+                        <!-- Note o "/noticia" em minúsculo para bater com a rota -->
+                        <a href="/noticia/<?= $r['id'] ?>/<?= limparSlug($r['Titulo']) ?>" class="read-more">
+                            Leia Mais <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            <?php endforeach; ?>
+
         </div>
         <br/>
         <div class="text-center mt-4">
@@ -234,7 +236,7 @@
 <section id="contato" class="contact-info section-padding bg-light">
     <div class="container">
         <h2>Fale Conosco e Informações Úteis</h2>
-        <img src="img/esic-removebg-preview.png" width="100%"/>
+        <img src="/img/esic-removebg-preview.png" width="100%"/>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.562977736507!2d-45.087611599999995!3d-21.09011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b556b40480722d%3A0x61ba8c393a21bb4d!2sC%C3%A2mara%20Municipal%20de%20Perd%C3%B5es!5e0!3m2!1spt-BR!2sbr!4v1773589311463!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="contact-grid">
             <div class="contact-card">

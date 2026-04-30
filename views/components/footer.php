@@ -7,7 +7,7 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col">
-                <img src="img/camaraPerdoesRodape.png" width="200px" height="100px" alt="Logo Prefeitura Rodapé">
+                <img src="/img/camaraPerdoesRodape.png" width="200px" height="100px" alt="Logo Prefeitura Rodapé">
                 <p>© 2026 Câmara Municipal de Perdões. Todos os direitos reservados.</p>
             </div>
             <div class="footer-col">
@@ -39,14 +39,14 @@
             </div>
             <div class="footer-col madeinipatinga">
                 <a href="https://www.frtecnologiadigital.com.br/" target="_blank">
-                    <img src="img/logoportalfreitas_branco.png" width="120px" height="80px" alt="Logo Prefeitura Rodapé">
+                    <img src="/img/logoportalfreitas_branco.png" width="120px" height="80px" alt="Logo Prefeitura Rodapé">
                     <p>Desenvolvido em 2026 por FR Tecnologia</p>
                 </a>
             </div>
         </div>
     </div>
 </footer>
-<script src="script.js"></script>
+<script src="/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

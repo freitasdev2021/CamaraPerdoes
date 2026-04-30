@@ -85,7 +85,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Câmara Municipal de Perdões - MG</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -112,7 +112,7 @@
 <header class="header">
     <div class="header-container">
         <a href="/" class="logo">
-            <img src="img/logo.png" alt="Câmara Municipal de Perdões">
+            <img src="/img/logo.png" alt="Câmara Municipal de Perdões">
         </a>
 
         <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
@@ -148,7 +148,7 @@
                         <li><a href="http://www.transparencia.mg.gov.br/" target="_blank">Transparência MG</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Ouvidoria</a></li>
+                <li><a href="<?=$Ouvidoria;?>">Ouvidoria</a></li>
                 <li><a href="https://www.youtube.com/channel/UCzkvzY-VZS4yM3XpIzuqmMw" target="_blank">TV Câmara</a></li>
                 <li><a href="http://cmperdoes.mg.gov.br:2095/" target="_blank">WEBMAIL</a></li>
                 <li><a href="">Perguntas Frequêntes</a></li>
