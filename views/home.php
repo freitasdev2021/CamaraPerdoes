@@ -185,7 +185,7 @@ $Noticias = json_decode($response['body'],true);
         </div>
         <br/>
         <div class="text-center mt-4">
-            <a href="#" class="btn-secondary">Todas as Notícias e Eventos</a>
+            <a href="/Noticias" class="btn-secondary">Todas as Notícias e Eventos</a>
         </div>
     </div>
 </section>

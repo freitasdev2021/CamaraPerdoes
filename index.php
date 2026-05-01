@@ -11,7 +11,8 @@ include "api.php";
 $rotas = [
     ["path" => "/", "file" => "home.php", "Title" => "Principal"],
     ["path" => "/Institucional", "file" => "institucional.php", "Title" => "Institucional"],
-    ["path" => "/noticia/{id}/{slug}", "file" => "noticia.php", "Title" => "Notícia"]
+    ["path" => "/noticia/{id}/{slug}", "file" => "noticia.php", "Title" => "Notícia"],
+    ["path" => "/Noticias", "file" => "noticias.php", "Title" => "Notícias"],
 ];
 
 $Pagina = null;

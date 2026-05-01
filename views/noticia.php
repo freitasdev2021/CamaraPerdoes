@@ -27,6 +27,18 @@ $response2 = apiRequest(
 
 $Noticias = json_decode($response2['body'],true);
 
+$response3 = apiRequest(
+    $api.'Organizacao',
+    'GET',
+    [],
+    [
+        "Authorization: ".$HeaderToken,
+        "Token: ".$Token
+    ]
+);
+
+$ORG = json_decode($response3['body'],true);
+
 ?>
 
 <!-- Bootstrap 5 CSS -->
@@ -279,6 +291,10 @@ $Noticias = json_decode($response2['body'],true);
     .nav-principal a{
         text-decoration:none;
     }
+
+    footer a{
+        text-decoration:none;
+    }
 </style>
 
 <div class="main-container">
@@ -326,7 +342,7 @@ $Noticias = json_decode($response2['body'],true);
                             foreach($Noticias as $n){
                             ?>
                             <li>
-                                <a href="#">
+                                <a href="/noticia/<?= $n['id'] ?>/<?= limparSlug($n['Titulo']) ?>">
                                     <div class="item-titulo"><?= $n['Titulo']; ?></div>
                                     <div class="item-data"><i class="far fa-calendar-alt"></i> <?= $n['Data']; ?></div>
                                 </a>
@@ -341,11 +357,9 @@ $Noticias = json_decode($response2['body'],true);
                             <i class="fas fa-link"></i> Links Úteis
                         </div>
                         <ul class="links-uteis">
-                            <li><a href="#"><i class="fas fa-external-link-alt"></i> Portal da Transparência</a></li>
-                            <li><a href="#"><i class="fas fa-envelope"></i> Fale com o Governo</a></li>
-                            <li><a href="#"><i class="fas fa-file-alt"></i> Acesso à Informação</a></li>
-                            <li><a href="#"><i class="fas fa-calendar-check"></i> Agenda de Autoridades</a></li>
-                            <li><a href="#"><i class="fas fa-chart-line"></i> Dados Abertos</a></li>
+                            <li><a href="/#transparencia"><i class="fas fa-external-link-alt"></i> Portal da Transparência</a></li>
+                            <li><a href="<?= $Ouvidoria ?>?>"><i class="fas fa-envelope"></i> Ouvidoria</a></li>
+                            <li><a href="/#contato"><i class="fas fa-file-alt"></i> Acesso à Informação</a></li>
                         </ul>
                     </div>
                     
@@ -355,9 +369,8 @@ $Noticias = json_decode($response2['body'],true);
                             <i class="fas fa-headset"></i> Canais de Atendimento
                         </div>
                         <ul class="links-uteis">
-                            <li><i class="fas fa-phone"></i> Disque 162</li>
-                            <li><i class="fab fa-whatsapp"></i> (11) 99999-9999</li>
-                            <li><i class="far fa-envelope"></i> ouvidoria@governo.br</li>
+                            <li><i class="fas fa-phone"></i> <?= $ORG['Telefone'] ?></li>
+                            <li><i class="far fa-envelope"></i> <?= $ORG['Email'] ?></li>
                         </ul>
                     </div>
                 </div>
