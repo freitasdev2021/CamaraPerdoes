@@ -3,6 +3,23 @@
     font-size:15px;
 }
 </style>
+<?php
+$responsePopup = apiRequest(
+    $api.'Popups',
+    'GET',
+    [],
+    [
+        "Authorization: ".$HeaderToken,
+        "Token: ".$Token
+    ]
+);
+
+$Popups = json_decode($responsePopup['body'],true);
+$Popup = [
+    "Imagem" => $Popups['Popups']['Foto'],
+    "Ativo" => $Popups['Ativo']
+];
+?>
 <footer class="footer">
     <div class="container">
         <div class="footer-grid">
@@ -48,5 +65,49 @@
 </footer>
 <script src="/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        const popup = document.getElementById('popup');
+        const popupImg = document.getElementById('popup-img');
+        const popupClose = document.querySelector('.popup-close');
+
+        const popupData = {
+            ativo: <?= $Popup['Ativo'] ? 'true' : 'false' ?>,
+            imagem: "<?= $Popup['Imagem'] ?>"
+        };
+
+        /* Abrir */
+        function openPopup(src) {
+            popupImg.src = src;
+            popup.classList.add('active');
+        }
+
+        /* Fechar */
+        function closePopup() {
+            popup.classList.remove('active');
+
+            // salva que foi fechado na sessão
+            sessionStorage.setItem('popupFechado', 'true');
+        }
+
+        /* Eventos */
+        popupClose.addEventListener('click', closePopup);
+
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                closePopup();
+            }
+        });
+
+        /* AUTO ABRIR */
+        window.addEventListener('load', () => {
+            const jaFechado = sessionStorage.getItem('popupFechado');
+
+            if (popupData.ativo && popupData.imagem && !jaFechado) {
+                setTimeout(() => {
+                    openPopup(popupData.imagem);
+                }, 800);
+            }
+        });
+    </script>
 </body>
 </html>
