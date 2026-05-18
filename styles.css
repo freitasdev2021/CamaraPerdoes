@@ -222,6 +222,10 @@ ul {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+.dropdown{
+    z-index:9999;
+}
+
 /* Campo de entrada de texto */
 .search-txt {
     border: none;
@@ -427,7 +431,94 @@ ul {
     color: #666;
     margin-bottom: 0;
 }
+/* ==================== 6. GALERIAS ==================== */
 
+.fotos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
+    gap: 20px;
+}
+
+.fotos-header{
+    text-align:center;
+}
+
+.fotos-card{
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.fotos-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.fotos-image{
+    height: 220px;
+    overflow: hidden;
+}
+
+.fotos-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.fotos-card:hover .fotos-image img{
+    transform: scale(1.05);
+}
+
+.fotos-content{
+    padding: 16px;
+    text-align: center;
+}
+
+.fotos-cargo{
+    display: inline-block;
+    background: #0f172a;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    letter-spacing: .5px;
+}
+
+.fotos-content h3{
+    font-size: 18px;
+    color: #1e293b;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+@media(max-width:768px){
+
+    .fotos-grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+
+    .fotos-card{
+        max-width: 100%;
+    }
+
+    .fotos-image{
+        height: 180px;
+    }
+
+    .fotos-content h3{
+        font-size: 16px;
+    }
+}
 
 /* ==================== 6. NOTÍCIAS E EVENTOS ==================== */
 .news-events h2, .news-events p {

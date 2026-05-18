@@ -24,6 +24,23 @@ $response2 = apiRequest(
 );
 
 $Banners = json_decode($response2['body'],true);
+
+$response3 = apiRequest(
+    $api.'Galeria/2',
+    'GET',
+    [
+        "Limite" => 10
+    ],
+    [
+        "Authorization: ".$HeaderToken,
+        "Token: ".$Token
+    ]
+);
+
+$Vereadores = json_decode($response3['body'],true);
+//echo "<pre>";
+//print_r($Vereadores);
+//echo"</pre>";
 ?>
 <!--BANNER-->
 <section id="home" class="hero">
@@ -54,6 +71,37 @@ $Banners = json_decode($response2['body'],true);
         <img id="popup-img" src="" alt="">
     </div>
 </div>
+<!--VEREADORES-->
+<section id="vereadores" class="fotos-events section-padding">
+    <div class="container">
+        <div class="fotos-header">
+            <h2>Parlamentares</h2>
+            <p>Conheça os representantes do legislativo municipal.</p>
+        </div>
+
+        <div class="fotos-grid">
+           <?php 
+           foreach($Vereadores as $v): 
+            $Vereador = explode('-',$v['DSFoto']);
+           ?>
+                <article class="fotos-card">
+                    <div class="fotos-image">
+                        <img src="<?= $v['Imagem'] ?>" alt="<?= $Vereador[0] ?>">
+                    </div>
+
+                    <div class="fotos-content">
+                        <span class="fotos-cargo">
+                            <?=$Vereador[1]?> <!-- Presidente, Vice ou Vereador -->
+                        </span>
+
+                        <h3><?= $Vereador[0] ?></h3>
+                    </div>
+                </article>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+<!--SERVICOS-->
 <section id="servicos" class="services-highlight section-padding">
     <div class="container">
         <h2>Serviços Mais Procurados</h2>
