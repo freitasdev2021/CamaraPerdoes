@@ -20,6 +20,18 @@ $Popup = [
     "Ativo" => $Popups['Ativo']
 ];
 ?>
+<div id="accessibility-button" class="floating-button"><i class="fa-solid fa-universal-access"></i></div>
+    <div id="accessibility-menu" class="side-menu">
+    <ul>
+        <li><a href="#" id="zoom-in">Zoom In</a></li>
+        <li><a href="#" id="zoom-out">Zoom Out</a></li>
+        <li><a href="#" id="fonte-grande">Aumentar Fonte</a></li>
+        <li><a href="#" id="invert">Inverter cores</a></li>
+        <li><a href="#" id="contrast">Contraste</a></li>
+        <li><a href="#" id="brightness">Brilho</a></li>
+        <li><a href="#" id="grayscale">Escala cinza</a></li>
+    </ul>
+</div>
 <footer class="footer">
     <div class="container">
         <div class="footer-grid">
@@ -63,7 +75,9 @@ $Popup = [
         </div>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
 <script src="/script.js"></script>
+<script src="/acessibilidade.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         const popup = document.getElementById('popup');
