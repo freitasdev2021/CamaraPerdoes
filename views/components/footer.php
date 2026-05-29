@@ -52,9 +52,9 @@ $Popup = [
             <div class="footer-col">
                 <h4>Links Úteis</h4>
                 <ul>
-                    <li><a href="#">Legislação</a></li>
-                    <li><a href="#">Perguntas Frequentes</a></li>
-                    <li><a href="#">Mapa do Site</a></li>
+                    <li><a href="https://leismunicipais.com.br/camara/mg/perdoes">Legislação</a></li>
+                    <li><a href="/perguntas-frequentes">Perguntas Frequentes</a></li>
+                    <li><a href="/mapa-site">Mapa do Site</a></li>
                 </ul>
             </div>
             <div class="footer-col">

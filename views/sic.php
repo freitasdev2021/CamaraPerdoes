@@ -122,7 +122,8 @@
 
             <div class="info-item">
                 <h3>Horário de Atendimento</h3>
-                <p>Segunda a Sexta-feira: 08h às 17h</p>
+                <p>Presencialmente <strong>Segunda a Sexta-feira: 08h às 18h</strong></p>
+                <p>Virutalmente: <strong>24h 7 dias na semana</strong></p>
             </div>
 
             <div class="info-item">

@@ -334,9 +334,10 @@ $Vereadores = json_decode($response3['body'],true);
             </div>
             <div class="contact-card">
                 <h3>Atendimento</h3>
-                <p><i class="fas fa-clock"></i> Segunda a Sexta-feira: 08h às 17h</p>
+                <p><i class="fas fa-clock"></i> Segunda a Sexta-feira: 08h às 18h</p>
                 <p><i class="fas fa-phone"></i> Telefone: (35) 3864-1380</p>
                 <p><i class="fas fa-envelope"></i> Email: contato@cmperdoes.mg.gov.br</p>
+                <p><i class="fas fa-monitor"></i> Virtualmente 24/7: <a href="<?= $Ouvidoria ?>">Ouvidoria Online</a></p>
             </div>
             <div class="contact-card">
                 <h3>Redes Sociais</h3>
