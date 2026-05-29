@@ -13,6 +13,8 @@ $rotas = [
     ["path" => "/Institucional", "file" => "institucional.php", "Title" => "Institucional"],
     ["path" => "/noticia/{id}/{slug}", "file" => "noticia.php", "Title" => "Notícia"],
     ["path" => "/Noticias", "file" => "noticias.php", "Title" => "Notícias"],
+    ["path" => "/Pesquisar", "file" => "pesquisar.php", "Title" => "Pesquisar"],
+    ["path" => "/perguntas-frequentes", "file" => "perguntasfrequentes.php", "Title" => "Perguntas Frequentes"]
 ];
 
 $Pagina = null;
