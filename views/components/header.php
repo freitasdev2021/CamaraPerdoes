@@ -140,6 +140,7 @@
                 <li class="dropdown">
                     <a href="#">Transparência</a>
                     <ul class="submenu">
+                        <li><a href="https://radardatransparencia.atricon.org.br/" target="_blank">Radar da Transparência</a></li>
                         <li><a href="https://ilai.memory.com.br/#/entidades/login/9CCNMU/2" target="_blank">Portal de Transparência Câmara (novo)</a></li>
                         <li><a href="http://www.escal.com.br/transparencia/frmCamara?CNPJ=25654344000145" target="_blank">Portal de Transparência (Antigo)</a></li>
                         <li><a href="https://ilai.memory.com.br/#/entidades/login/9CCNMT/1" target="_blank">Portal de Transparência Prefeitura</a></li>
@@ -147,14 +148,13 @@
                         <li><a href="https://sapl.perdoes.mg.leg.br/docadm/pesq-doc-adm" target="_blank">Relatórios de Controle Interno</a></li>
                         <li><a href="https://www.perdoes.mg.leg.br/organograma" target="_blank">Estrutura Organizacional</a></li>
                         <li><a href="http://www.transparencia.mg.gov.br/" target="_blank">Transparência MG</a></li>
-                        <li><a href="https://ilai.memory.com.br/#/public/home/prestacaocontas">Prestação de Contas</a></li>
+                        <li><a href="https://ilai.memory.com.br/#/public/home/prestacaocontas" target="_blank">Prestação de Contas</a></li>
                     </ul>
                 </li>
                 <li><a href="<?=$Ouvidoria;?>">Ouvidoria</a></li>
                 <li><a href="https://www.youtube.com/channel/UCzkvzY-VZS4yM3XpIzuqmMw" target="_blank">TV Câmara</a></li>
-                <li><a href="http://cmperdoes.mg.gov.br:2095/" target="_blank">WEBMAIL</a></li>
                 <li><a href="/perguntas-frequentes">Perguntas Frequêntes</a></li>
-                <li><a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=LeiParametro&ID=67" target="_blank">Leis Municipais</a></li>
+                <li><a href="https://leismunicipais.com.br/camara/mg/perdoes" target="_blank">Leis Municipais</a></li>
                 <li><a href="#">Conselhos Municipais</a></li>
             </ul>
         </nav>
