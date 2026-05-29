@@ -84,6 +84,7 @@ $Vereadores = json_decode($response3['body'],true);
            foreach($Vereadores as $v): 
             $Vereador = explode('-',$v['DSFoto']);
            ?>
+           <a href="<?= $v['URL'] ?>" target="_blank">
                 <article class="fotos-card">
                     <div class="fotos-image">
                         <img src="<?= $v['Imagem'] ?>" alt="<?= $Vereador[0] ?>">
@@ -97,6 +98,7 @@ $Vereadores = json_decode($response3['body'],true);
                         <h3><?= $Vereador[0] ?></h3>
                     </div>
                 </article>
+           </a>
             <?php endforeach; ?>
         </div>
     </div>
@@ -202,7 +204,7 @@ $Vereadores = json_decode($response3['body'],true);
                 <h3>Regimento Interno</h3>
             </a>
 
-            <a href="https://sapl.perdoes.mg.leg.br/norma/pesquisar" class="card">
+            <a href="https://leismunicipais.com.br/camara/mg/perdoes" class="card">
                 <i class="fas fa-scale-balanced"></i>
                 <h3>Leis Municipais</h3>
             </a>
@@ -322,9 +324,9 @@ $Vereadores = json_decode($response3['body'],true);
 <section id="contato" class="contact-info section-padding bg-light">
     <div class="container">
         <h2>Fale Conosco e Informações Úteis</h2>
-        <img src="/img/esic-removebg-preview.png" width="100%"/>
+        <img src="/img/esic-removebg-preview.png" width="100%" style="margin-bottom:15px;"/>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.562977736507!2d-45.087611599999995!3d-21.09011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b556b40480722d%3A0x61ba8c393a21bb4d!2sC%C3%A2mara%20Municipal%20de%20Perd%C3%B5es!5e0!3m2!1spt-BR!2sbr!4v1773589311463!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="contact-grid">
+        <div class="contact-grid" style="margin-top:15px;">
             <div class="contact-card">
                 <h3>Endereço</h3>
                 <p><i class="fas fa-map-marker-alt"></i> Rua Professor Gomide, nº 159. Bairro Palestina<br>Perdões, MG, CEP: 37260-000</p>
