@@ -118,20 +118,14 @@
                 </li>
 
                 <li>
-                    <a href="https://www.perdoes.mg.leg.br/detalhe-da-materia/info/historia/6500" target="_blank">
-                        História
-                    </a>
-                </li>
-
-                <li>
                     <a href="#contato">
                         Localização
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://www.perdoes.mg.leg.br/abrir_arquivo.aspx?cdLocal=2&arquivo={5D5CDDA8-EC43-EEEE-EDE2-646180CA7EBC}.pdf" target="_blank">
-                        Ex Presidentes e Ex Vereadores
+                    <a href="files/cartaServicos.pdf" downloads>
+                        Carta de Serviços
                     </a>
                 </li>
             </ul>

@@ -143,9 +143,7 @@ new window.VLibras.Widget('https://vlibras.gov.br/app');
                             <a href="/Institucional">Institucional</a>
                         </li>
                         <li><a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=Vereador&ID=67" target="_blank">Parlamentares</a></li>
-                        <li><a href="https://www.perdoes.mg.leg.br/detalhe-da-materia/info/historia/6500" target="_blank">História</a></li>
                         <li><a href="#contato">Localização</a></li>
-                        <li><a href="https://www.perdoes.mg.leg.br/abrir_arquivo.aspx?cdLocal=2&arquivo={5D5CDDA8-EC43-EEEE-EDE2-646180CA7EBC}.pdf">Ex Presidentes e Ex Vereadores</a></li>
                     </ul>
                 </li>
 
