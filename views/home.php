@@ -234,7 +234,7 @@ $Vereadores = json_decode($response3['body'],true);
                 <h3>Galerias</h3>
             </a>
 
-            <a href="https://www.perdoes.mg.leg.br/processos-seletivos" class="card">
+            <a href="/processos-seletivos" class="card">
                 <i class="fas fa-user-tie"></i>
                 <h3>Concurso Público e Processos Seletivos</h3>
             </a>
