@@ -71,6 +71,44 @@ $Vereadores = json_decode($response3['body'],true);
         <img id="popup-img" src="" alt="">
     </div>
 </div>
+<!--SERVIÇOS LEGISLATIVOS-->
+<!--SERVICOS-->
+<section id="servicos" class="services-highlight section-padding">
+    <div class="container">
+        <h2>Legislação Municipal</h2>
+        <p>Facilitando o seu acesso a leis municipais.</p>
+        <div class="service-cards">
+            <a href="https://www.perdoes.mg.leg.br/abrir_arquivo.aspx?cdLocal=2&arquivo={BA2867EC-CDDB-628C-DAD1-C45DAAB5EEB8}.pdf" class="card">
+                <i class="fas fa-book-bible"></i>
+                <h3>Lei Orgânica</h3>
+            </a>
+
+            <a href="https://leismunicipais.com.br/a2/regimento-interno-da-camara-perdoes-mg" class="card">
+                <i class="fas fa-book-open-reader"></i>
+                <h3>Regimento Interno</h3>
+            </a>
+
+            <a href="https://leismunicipais.com.br/camara/mg/perdoes" class="card">
+                <i class="fas fa-scale-balanced"></i>
+                <h3>Leis Municipais</h3>
+            </a>
+
+            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=LeiConsulta&ID=67&inEspecieLei=3" class="card">
+                <i class="fas fa-gavel"></i>
+                <h3>Decretos Legislativos</h3>
+            </a>
+            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=ProjetoTramite&ID=67" class="card">
+                <i class="fas fa-landmark"></i>
+                <h3>Projeto de Lei Ordinária - Legislativo</h3>
+            </a>
+
+            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=ProjetoTramite&ID=67" class="card">
+                <i class="fas fa-landmark"></i>
+                <h3>Projeto de Lei Ordinária - Executivo</h3>
+            </a>
+        </div>
+    </div>
+</section>
 <!--VEREADORES-->
 <section id="vereadores" class="fotos-events section-padding">
     <div class="container">
@@ -109,15 +147,6 @@ $Vereadores = json_decode($response3['body'],true);
         <h2>Serviços Mais Procurados</h2>
         <p>Facilitando o seu dia a dia com acesso rápido aos principais serviços.</p>
         <div class="service-cards">
-            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=ProjetoTramite&ID=67" class="card">
-                <i class="fas fa-landmark"></i>
-                <h3>Projeto de Lei Ordinária - Legislativo</h3>
-            </a>
-
-            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=ProjetoTramite&ID=67" class="card">
-                <i class="fas fa-landmark"></i>
-                <h3>Projeto de Lei Ordinária - Executivo</h3>
-            </a>
 
             <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=ProjetoParametro&ID=67" class="card">
                 <i class="fas fa-lightbulb"></i>
@@ -192,26 +221,6 @@ $Vereadores = json_decode($response3['body'],true);
             <a href="https://www.perdoes.mg.leg.br/processos-seletivos" class="card">
                 <i class="fas fa-file-contract"></i>
                 <h3>Contratações</h3>
-            </a>
-
-            <a href="https://www.perdoes.mg.leg.br/abrir_arquivo.aspx?cdLocal=2&arquivo={BA2867EC-CDDB-628C-DAD1-C45DAAB5EEB8}.pdf" class="card">
-                <i class="fas fa-book-bible"></i>
-                <h3>Lei Orgânica</h3>
-            </a>
-
-            <a href="https://leismunicipais.com.br/a2/regimento-interno-da-camara-perdoes-mg" class="card">
-                <i class="fas fa-book-open-reader"></i>
-                <h3>Regimento Interno</h3>
-            </a>
-
-            <a href="https://leismunicipais.com.br/camara/mg/perdoes" class="card">
-                <i class="fas fa-scale-balanced"></i>
-                <h3>Leis Municipais</h3>
-            </a>
-
-            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=LeiConsulta&ID=67&inEspecieLei=3" class="card">
-                <i class="fas fa-gavel"></i>
-                <h3>Decretos Legislativos</h3>
             </a>
 
             <a href="https://ilai.memory.com.br/#/entidades/login/9CCNMU/2" class="card">
