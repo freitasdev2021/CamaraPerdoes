@@ -92,20 +92,6 @@ $Vereadores = json_decode($response3['body'],true);
                 <i class="fas fa-scale-balanced"></i>
                 <h3>Leis Municipais</h3>
             </a>
-
-            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=LeiConsulta&ID=67&inEspecieLei=3" class="card">
-                <i class="fas fa-gavel"></i>
-                <h3>Decretos Legislativos</h3>
-            </a>
-            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=ProjetoTramite&ID=67" class="card">
-                <i class="fas fa-landmark"></i>
-                <h3>Projeto de Lei Ordinária - Legislativo</h3>
-            </a>
-
-            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=ProjetoTramite&ID=67" class="card">
-                <i class="fas fa-landmark"></i>
-                <h3>Projeto de Lei Ordinária - Executivo</h3>
-            </a>
         </div>
     </div>
 </section>
@@ -147,7 +133,19 @@ $Vereadores = json_decode($response3['body'],true);
         <h2>Serviços Mais Procurados</h2>
         <p>Facilitando o seu dia a dia com acesso rápido aos principais serviços.</p>
         <div class="service-cards">
+            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=LeiConsulta&ID=67&inEspecieLei=3" class="card">
+                <i class="fas fa-gavel"></i>
+                <h3>Decretos Legislativos</h3>
+            </a>
+            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=ProjetoTramite&ID=67" class="card">
+                <i class="fas fa-landmark"></i>
+                <h3>Projeto de Lei Ordinária - Legislativo</h3>
+            </a>
 
+            <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=ProjetoTramite&ID=67" class="card">
+                <i class="fas fa-landmark"></i>
+                <h3>Projeto de Lei Ordinária - Executivo</h3>
+            </a>
             <a href="https://www.legislador.com.br//LegisladorWEB.ASP?WCI=ProjetoParametro&ID=67" class="card">
                 <i class="fas fa-lightbulb"></i>
                 <h3>Anteprojeto</h3>
