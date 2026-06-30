@@ -150,7 +150,7 @@ new window.VLibras.Widget('https://vlibras.gov.br/app');
                 <li class="dropdown">
                     <a href="#">Transparência</a>
                     <ul class="submenu">
-                        <li><a href="https://radardatransparencia.atricon.org.br/" target="_blank">Radar da Transparência</a></li>
+                        <li><a href="https://radardatransparencia.atricon.org.br/" target="_blank">Radar da Transparência Pública</a></li>
                         <li><a href="https://ilai.memory.com.br/#/entidades/login/9CCNMU/2" target="_blank">Portal de Transparência Câmara (novo)</a></li>
                         <li><a href="http://www.escal.com.br/transparencia/frmCamara?CNPJ=25654344000145" target="_blank">Portal de Transparência (Antigo)</a></li>
                         <li><a href="https://ilai.memory.com.br/#/entidades/login/9CCNMT/1" target="_blank">Portal de Transparência Prefeitura</a></li>

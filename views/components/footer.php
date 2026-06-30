@@ -35,8 +35,14 @@ $Popup = [
 <footer class="footer">
     <div class="container">
         <div class="footer-grid">
-            <div class="footer-col">
-                <img src="/img/camaraPerdoesRodape.png" width="200px" height="100px" alt="Logo Prefeitura Rodapé">
+            <div class="footer-col imgcool">
+                <a href="https://radardatransparencia.atricon.org.br/" target="_blank">
+                    <img src="/img/radartransparencia.png" width="200px" height="100px" alt="Radar da Transparência">
+                </a>
+                <br/>
+                <div>
+                    <img src="/img/camaraPerdoesRodape.png" width="200px" height="100px" alt="Logo Prefeitura Rodapé">
+                </div>
                 <p>© 2026 Câmara Municipal de Perdões. Todos os direitos reservados.</p>
             </div>
             <div class="footer-col">
