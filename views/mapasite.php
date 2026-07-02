@@ -227,12 +227,6 @@
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
-                        Conselhos Municipais
-                    </a>
-                </li>
-
             </ul>
 
         </div>

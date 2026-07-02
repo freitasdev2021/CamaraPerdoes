@@ -1,26 +1,26 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <style>
    .list-group-item.active {
-   background-color: #216191;
-   border-color: #01255E;
+      background-color: #216191;
+      border-color: #01255E;
    }
    .list-group{
-   border-radius:0px; /* Remove a borda de todos os itens */
+      border-radius:0px; /* Remove a borda de todos os itens */
    }
    h1{
-   color: #216191;
+      color: #216191;
    }
    .corLogo{
-   color : #216191;
+      color : #216191;
    }
    .bgCorLogo{
-   background:#216191;
+      background:#216191;
    }
    a{
-   text-decoration:none;
+      text-decoration:none;
    }
    .submenu{
-   z-index:999;
+      z-index:999;
    }
 </style>
 <div class="content p-2">
@@ -28,8 +28,6 @@
    <div class="col-4">
       <div class="list-group" id="list-tab" role="tablist">
          <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">História</a>
-         <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Parlamentares</a>
-         <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Conselhos Municipais</a>
          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Organograma</a>
          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-expresidentes" role="tab" aria-controls="list-expresidentes">Legislaturas</a>
       </div>
@@ -52,8 +50,13 @@
                      <div class="col-lg-8 text-center">
                         <h2 class="fw-bold">Fundação do Povoado</h2>
                         <p class="text-muted">
-                           O município teve origem no antigo povoado <strong>São Bom Jesus dos Perdões</strong>, 
-                           formado no século XVIII.
+                           Nos caminhos das Gerais Entradas e Bandeiras marcaram a história de muitos municípios mineiros. Nestas paragens a história não foi diferente. Por volta do ano de 1770, quando o mundo caminhava para o desfecho do século XVIII, chegou aqui um homem português, cujo nome era Romão Fagundes do Amaral, hábil minerador e bastante ambicioso.
+
+                           Sem muito atentar para os editos da Coroa Portuguesa vivia a procura de lugares propícios à exploração de riquezas. Nestas terras minerou e enriqueceu. Cruzou linhas históricas e geográficas e hoje temos vestígios de sua teia entrelaçando Perdões, Cana Verde e Campo Belo.
+
+                           Segundo a tradição Romão Fagundes se tornou fugitivo por manter garimpos clandestinos sonegando os impostos. Depois de muito se esquivar resolveu não mais viver às ocultas e fez uma promessa à Coroa, pedindo o seu perdão. Este se fosse concebido, seria retribuído com um cachinho de banana de ouro. Romão Fagundes assegurou ainda que mandaria vir de Portugal a imagem do Senhor Bom Jesus. O que de fato aconteceu
+
+                           Por iniciativa do Alferes Romão Fagundes do Amaral, foi edificada a Capela Bom Jesus dos Perdões, por volta de 1770, nas proximidades da qual se formou o arraial de Perdões. Desde o início dedicada ao Senhor Bom Jesus essa igreja é a primitiva capela do Senhor dos Perdões. Depois dedicada a Nossa Senhora do Rosário, quando se construiu a Igreja Matriz. Não sabemos contar quantos passos subiram os gastos degraus que conduzem aos retábulos da fé; não sabemos contar quantas pessoas passaram nesta Igreja em busca de esperança e de ressurreição. Não é possível saber nem mesmo quantos descansam sob o telhado tramado da Igreja, primeiro cemitério da paróquia.
                         </p>
                      </div>
                   </div>
@@ -84,93 +87,6 @@
                   </div>
                </div>
             </section>
-         </div>
-         <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-               <div class="col">
-                  <div class="card h-100">
-                     <img src="vereadores/florisvaldo.jpg" class="card-img-top" alt="...">
-                     <div class="card-body">
-                        <h5 class="card-title">Florisvaldo Diniz</h5>
-                        <p class="card-text">Presidente</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col">
-                  <div class="card h-100">
-                     <img src="vereadores/anderson.jpg" class="card-img-top" alt="...">
-                     <div class="card-body">
-                        <h5 class="card-title">Anderson Cavralho Pereira</h5>
-                        <p class="card-text">Vice-Presidente</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col">
-                  <div class="card h-100">
-                     <img src="vereadores/marcio.jpg" class="card-img-top" alt="...">
-                     <div class="card-body">
-                        <h5 class="card-title">Márcio Oliveira Rodrigues - Secretário</h5>
-                        <p class="card-text">Secretário</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col">
-                  <div class="card h-100">
-                     <img src="vereadores/antonio.jpg" class="card-img-top" alt="...">
-                     <div class="card-body">
-                        <h5 class="card-title">Antônio José Bastos</h5>
-                        <p class="card-text">Vereador</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col">
-                  <div class="card h-100">
-                     <img src="vereadores/artur.jpg" class="card-img-top" alt="...">
-                     <div class="card-body">
-                        <h5 class="card-title">Artur Ferreira Neto</h5>
-                        <p class="card-text">Vereador</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col">
-                  <div class="card h-100">
-                     <img src="vereadores/fernando.jpg" class="card-img-top" alt="...">
-                     <div class="card-body">
-                        <h5 class="card-title">Fernando Alvarenga Costa</h5>
-                        <p class="card-text">Vereador</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col">
-                  <div class="card h-100">
-                     <img src="vereadores/helton.jpg" class="card-img-top" alt="...">
-                     <div class="card-body">
-                        <h5 class="card-title">Helton Vicente de Souza</h5>
-                        <p class="card-text">Vereador</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col">
-                  <div class="card h-100">
-                     <img src="vereadores/marcos.jpg" class="card-img-top" alt="...">
-                     <div class="card-body">
-                        <h5 class="card-title">Marcos Tadeu de Carvalho</h5>
-                        <p class="card-text">Vereador</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col">
-                  <div class="card h-100">
-                     <img src="vereadores/telles.jpg" class="card-img-top" alt="...">
-                     <div class="card-body">
-                        <h5 class="card-title">Thelles Vitor Ferreira</h5>
-                        <p class="card-text">Vereador</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
          </div>
          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
             <div class="accordion" id="accordionExample">

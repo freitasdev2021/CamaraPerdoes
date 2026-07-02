@@ -165,7 +165,6 @@ new window.VLibras.Widget('https://vlibras.gov.br/app');
                 <li><a href="https://www.youtube.com/channel/UCzkvzY-VZS4yM3XpIzuqmMw" target="_blank">TV Câmara</a></li>
                 <li><a href="/perguntas-frequentes">Perguntas Frequêntes</a></li>
                 <li><a href="https://leismunicipais.com.br/camara/mg/perdoes" target="_blank">Leis Municipais</a></li>
-                <li><a href="#">Conselhos Municipais</a></li>
                 <li><a href="files/cartaServicos.pdf" download>Carta de Serviços</a></li>
             </ul>
         </nav>
