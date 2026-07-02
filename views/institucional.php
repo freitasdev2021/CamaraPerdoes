@@ -50,13 +50,23 @@
                      <div class="col-lg-8 text-center">
                         <h2 class="fw-bold">Fundação do Povoado</h2>
                         <p class="text-muted">
-                           Nos caminhos das Gerais Entradas e Bandeiras marcaram a história de muitos municípios mineiros. Nestas paragens a história não foi diferente. Por volta do ano de 1770, quando o mundo caminhava para o desfecho do século XVIII, chegou aqui um homem português, cujo nome era Romão Fagundes do Amaral, hábil minerador e bastante ambicioso.
+                           Nos caminhos das Gerais, Entradas e Bandeiras marcaram a história de muitos municípios mineiros. Nestas paragens a história não foi diferente. Por volta do ano de 1770, quando o mundo caminhava para o desfecho do século XVIII, chegou aqui um homem português, cujo nome era Romão Fagundes do Amaral, hábil minerador e bastante ambicioso.
+                        </p>
 
-                           Sem muito atentar para os editos da Coroa Portuguesa vivia a procura de lugares propícios à exploração de riquezas. Nestas terras minerou e enriqueceu. Cruzou linhas históricas e geográficas e hoje temos vestígios de sua teia entrelaçando Perdões, Cana Verde e Campo Belo.
+                        <p class="text-muted">
+                           Sem muito atentar para os éditos da Coroa Portuguesa, vivia à procura de lugares propícios à exploração de riquezas. Nestas terras minerou e enriqueceu. Cruzou linhas históricas e geográficas e hoje temos vestígios de sua teia entrelaçando Perdões, Cana Verde e Campo Belo.
+                        </p>
 
-                           Segundo a tradição Romão Fagundes se tornou fugitivo por manter garimpos clandestinos sonegando os impostos. Depois de muito se esquivar resolveu não mais viver às ocultas e fez uma promessa à Coroa, pedindo o seu perdão. Este se fosse concebido, seria retribuído com um cachinho de banana de ouro. Romão Fagundes assegurou ainda que mandaria vir de Portugal a imagem do Senhor Bom Jesus. O que de fato aconteceu
+                        <p class="text-muted">
+                           Segundo a tradição, Romão Fagundes se tornou fugitivo por manter garimpos clandestinos, sonegando os impostos. Depois de muito se esquivar, resolveu não mais viver às ocultas e fez uma promessa à Coroa, pedindo o seu perdão. Se este lhe fosse concedido, seria retribuído com um cachinho de banana de ouro. Romão Fagundes assegurou ainda que mandaria vir de Portugal a imagem do Senhor Bom Jesus, o que de fato aconteceu.
+                        </p>
 
-                           Por iniciativa do Alferes Romão Fagundes do Amaral, foi edificada a Capela Bom Jesus dos Perdões, por volta de 1770, nas proximidades da qual se formou o arraial de Perdões. Desde o início dedicada ao Senhor Bom Jesus essa igreja é a primitiva capela do Senhor dos Perdões. Depois dedicada a Nossa Senhora do Rosário, quando se construiu a Igreja Matriz. Não sabemos contar quantos passos subiram os gastos degraus que conduzem aos retábulos da fé; não sabemos contar quantas pessoas passaram nesta Igreja em busca de esperança e de ressurreição. Não é possível saber nem mesmo quantos descansam sob o telhado tramado da Igreja, primeiro cemitério da paróquia.
+                        <p class="text-muted">
+                           Por iniciativa do Alferes Romão Fagundes do Amaral, foi edificada a Capela Bom Jesus dos Perdões, por volta de 1770, nas proximidades da qual se formou o arraial de Perdões. Desde o início dedicada ao Senhor Bom Jesus, essa igreja é a primitiva Capela do Senhor dos Perdões. Posteriormente foi dedicada a Nossa Senhora do Rosário, quando se construiu a Igreja Matriz.
+                        </p>
+
+                        <p class="text-muted">
+                           Não sabemos contar quantos passos subiram os gastos degraus que conduzem aos retábulos da fé; não sabemos contar quantas pessoas passaram nesta igreja em busca de esperança e de ressurreição. Não é possível saber nem mesmo quantos descansam sob o telhado tramado da igreja, primeiro cemitério da paróquia.
                         </p>
                      </div>
                   </div>

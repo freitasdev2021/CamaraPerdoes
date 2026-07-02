@@ -78,7 +78,7 @@ $Vereadores = json_decode($response3['body'],true);
         <h2>Legislação Municipal</h2>
         <p>Facilitando o seu acesso a leis municipais.</p>
         <div class="service-cards">
-            <a href="https://www.perdoes.mg.leg.br/abrir_arquivo.aspx?cdLocal=2&arquivo={BA2867EC-CDDB-628C-DAD1-C45DAAB5EEB8}.pdf" class="card">
+            <a href="https://leismunicipais.com.br/a2/lei-organica-perdoes-mg" class="card">
                 <i class="fas fa-book-bible"></i>
                 <h3>Lei Orgânica</h3>
             </a>
@@ -108,7 +108,7 @@ $Vereadores = json_decode($response3['body'],true);
            foreach($Vereadores as $v): 
             $Vereador = explode('-',$v['DSFoto']);
            ?>
-           <a href="<?= $v['URL'] ?>" target="_blank">
+           <div href="<?= $v['URL'] ?>" target="_blank">
                 <article class="fotos-card">
                     <div class="fotos-image">
                         <img src="<?= $v['Imagem'] ?>" alt="<?= $Vereador[0] ?>">
@@ -120,9 +120,10 @@ $Vereadores = json_decode($response3['body'],true);
                         </span>
 
                         <h3><?= $Vereador[0] ?></h3>
+                        <a href="<?= $v['URL'] ?>" target="_blank">Conheça o parlamentar</a>
                     </div>
                 </article>
-           </a>
+           </div>
             <?php endforeach; ?>
         </div>
     </div>
