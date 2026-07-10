@@ -1198,6 +1198,26 @@
                <td>2021</td>
                <td>Florisvaldo Diniz</td>
             </tr>
+            <tr>
+               <td>2022</td>
+               <td>Florisvaldo Diniz</td>
+            </tr>
+            <tr>
+               <td>2023</td>
+               <td>Adilson Johnny Monteiro de Alvarenga</td>
+            </tr>
+            <tr>
+               <td>2024</td>
+               <td>Adilson Johnny Monteiro de Alvarenga</td>
+            </tr>
+            <tr>
+               <td>2025</td>
+               <td>Florisvaldo Diniz</td>
+            </tr>
+            <tr>
+               <td>2026</td>
+               <td>Florisvaldo Diniz</td>
+            </tr>
          </tbody>
       </table>
    </div>

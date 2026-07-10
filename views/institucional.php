@@ -35,7 +35,7 @@
    <div class="col-8">
       <div class="tab-content" id="nav-tabContent">
          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-            <section class="bg-dark text-white py-5">
+            <section class="text-white py-5" style="background: url(../img/banner-site-memorial.jpeg)">
                <div class="container text-center">
                   <h1 class="display-5 fw-bold">História de Perdões</h1>
                   <p class="lead mb-0">
