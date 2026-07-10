@@ -8,7 +8,7 @@
       border-radius:0px; /* Remove a borda de todos os itens */
    }
    h1{
-      color: #216191;
+      color: white;
    }
    .corLogo{
       color : #216191;
