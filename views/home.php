@@ -283,10 +283,6 @@ $Vereadores = json_decode($response3['body'],true);
         <div class="text-center mt-4">
             <a href="/Noticias" class="btn-secondary">Todas as Notícias e Eventos</a>
         </div>
-        <br/>
-        <div class="text-center mt-4">
-            <a href="https://radardatransparencia.atricon.org.br/" target="_blank" class="btn-secondary">Transparência Atricon</a>
-        </div>
     </div>
 </section>
 <!--TRANSPARÊNCIA-->
@@ -329,6 +325,10 @@ $Vereadores = json_decode($response3['body'],true);
         <br/>
         <div class="text-center mt-4">
             <a href="https://ilai.memory.com.br/#/entidades/login/9CCNMU/2" target="_blank" class="btn-primary">Acessar Portal Completo <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <br/>
+        <div class="text-center mt-4">
+            <a href="https://radardatransparencia.atricon.org.br/" target="_blank" class="btn-secondary">Transparência Atricon</a>
         </div>
     </div>
 </section>
